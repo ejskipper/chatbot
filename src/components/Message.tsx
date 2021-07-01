@@ -1,6 +1,12 @@
-export default function Message({text}: { text: string }) {
+export interface MessageProps {
+    id: number;
+    text: string;
+    isUserMessage: boolean;
+}
+
+export default function Message({id, text, isUserMessage}: MessageProps) {
     return (
-        <div className="message">
+        <div className={isUserMessage ? "message user-message" : "message bot-message"}>
             {text}
         </div>
     );

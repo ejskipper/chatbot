@@ -20,7 +20,7 @@ export default function MessageInput({submitMessage}: { submitMessage: (message:
     }
 
     return (
-        <div>
+        <div className="input-container">
             <textarea className="message-input" value={inputValue} onChange={e => handleChange(e)}
                       onKeyDown={e => handleKeyDown(e)}/>
         </div>

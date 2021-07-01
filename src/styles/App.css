@@ -1,0 +1,23 @@
+html, body, #root {
+    height: 100%;
+}
+
+.App {
+    background-color: #f6f6f6;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.message {
+    margin: 5px 10px;
+}
+
+.message-input {
+    width: 90%;
+    border-radius: 10px;
+    resize: none;
+}
+

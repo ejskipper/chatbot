@@ -7,6 +7,9 @@ export default function MessageInput({submitMessage}: { submitMessage: (message:
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
         const target = e.target as HTMLTextAreaElement;
         setInputValue(target.value);
+
+        target.style.height = '0px';
+        target.style.height = Math.min(target.scrollHeight, 75) + "px";
     }
 
     const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {

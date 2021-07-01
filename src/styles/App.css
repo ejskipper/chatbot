@@ -29,9 +29,24 @@ body {
     overflow: hidden;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
 h1 {
     font-size: xxx-large;
     margin: 0;
+}
+
+.profile-link {
+    display: inline-block;
+    text-align: right;
+    font-size: xxx-large;
+    margin-right: 10px;
+    color: black;
 }
 
 .chat-panel {

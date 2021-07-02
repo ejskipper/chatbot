@@ -1,0 +1,28 @@
+.typing-indicator-dot {
+    background-color: #767676;
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 2px;
+    animation: 1.1s typing-indicator-dot ease infinite;
+}
+
+.typing-indicator-dot:nth-of-type(2) {
+    animation-delay: 0.15s;
+}
+
+.typing-indicator-dot:nth-of-type(3) {
+    animation-delay: 0.25s;
+}
+
+@keyframes typing-indicator-dot {
+    15% {
+        transform: translateY(-35%);
+        opacity: 0.5;
+    }
+    30% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}

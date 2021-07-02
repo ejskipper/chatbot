@@ -5,8 +5,8 @@ import {faGithubSquare, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 export default function App() {
     return (
-        <div className="App">
-            <div className="content">
+        <div className="app">
+            <div className="main-content">
                 <div className="header">
                     <h1>chatbot</h1>
                     <div>

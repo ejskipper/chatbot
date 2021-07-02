@@ -1,3 +1,5 @@
+import '../styles/TypingIndicator.css';
+
 export default function TypingIndicator() {
     return (
         <div className={"message bot-message"}>

@@ -1,3 +1,5 @@
+import '../styles/Message.css';
+
 export interface MessageProps {
     id: number;
     text: string;
@@ -11,4 +13,3 @@ export default function Message({id, text, isUserMessage}: MessageProps) {
         </div>
     );
 }
-

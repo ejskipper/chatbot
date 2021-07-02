@@ -2,7 +2,7 @@ import Message, {MessageProps} from "./Message";
 import {useEffect, useRef, useState} from "react";
 import MessageInput from "./MessageInput";
 import TypingIndicator from "./TypingIndicator";
-
+import '../styles/ChatPanel.css';
 
 export default function ChatPanel() {
     const [messages, setMessages] = useState<MessageProps[]>(testMessages);
@@ -54,7 +54,6 @@ export default function ChatPanel() {
         </div>
     );
 }
-
 
 const testMessages = [{id: 1, text: "Hello!", isUserMessage: false}, {
     id: 2,

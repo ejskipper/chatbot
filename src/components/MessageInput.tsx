@@ -1,4 +1,5 @@
 import {useState} from "react";
+import '../styles/MessageInput.css';
 
 export default function MessageInput({isSubmitDisabled, submitMessage}: { isSubmitDisabled: boolean, submitMessage: (message: string) => void }) {
     const [inputValue, setInputValue] = useState("");

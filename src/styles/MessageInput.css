@@ -1,0 +1,17 @@
+.input-container {
+    border-top: solid #f1f1f1;
+    padding: 10px;
+}
+
+.message-input {
+    width: calc(100% - 20px);
+    border-radius: 10px;
+    padding: 5px 10px;
+    resize: none;
+    height: 25px;
+}
+
+.message-input:focus {
+    outline: none;
+    box-shadow: 0 0 3px #eabd5d;
+}

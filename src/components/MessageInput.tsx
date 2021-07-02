@@ -1,7 +1,6 @@
 import {useState} from "react";
 
-
-export default function MessageInput({submitMessage}: { submitMessage: (message: string) => void }) {
+export default function MessageInput({isSubmitDisabled, submitMessage}: { isSubmitDisabled: boolean, submitMessage: (message: string) => void }) {
     const [inputValue, setInputValue] = useState("");
 
     const handleChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
@@ -17,8 +16,10 @@ export default function MessageInput({submitMessage}: { submitMessage: (message:
             e.preventDefault();
             e.stopPropagation();
 
-            inputValue && submitMessage(inputValue);
-            setInputValue("");
+            if (!isSubmitDisabled) {
+                inputValue && submitMessage(inputValue);
+                setInputValue("");
+            }
         }
     }
 
@@ -29,4 +30,3 @@ export default function MessageInput({submitMessage}: { submitMessage: (message:
         </div>
     );
 }
-

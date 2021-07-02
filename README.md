@@ -4,6 +4,8 @@ This is a React app for a simple chatbot which echoes the user's messages.
 
 As this is a design and UI focused project, there is no backend; all messages will be lost when the page is refreshed.
 
+Deployed at: https://ejskipper-chatbot.herokuapp.com/
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

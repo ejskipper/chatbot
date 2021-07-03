@@ -14,6 +14,7 @@ export default function ChatPanel() {
         if (bottomRef.current) {
             bottomRef.current.scrollIntoView({behavior: "smooth"});
         }
+
         const previousMessage = messages[messages.length - 1];
         if (previousMessage.isUserMessage) {
             setTimeout(function () {

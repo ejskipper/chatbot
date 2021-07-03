@@ -34,12 +34,12 @@ body {
 
 h1 {
     margin: 0;
-    font-size: xxx-large;
+    font-size: 48px;
 }
 
 .profile-link {
     margin-right: 10px;
     text-align: right;
-    font-size: xxx-large;
+    font-size: 48px;
     color: black;
 }
